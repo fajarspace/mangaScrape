@@ -70,9 +70,9 @@ router.get("/manga/detail/:slug", async (req, res) => {
   const slug = req.params.slug;
   let endpoint;
   console.log(slug);
-  if(slug === 'tokyo%e5%8d%8drevengers'){
+  if (slug === 'tokyo%e5%8d%8drevengers') {
     endpoint = 'tokyo卍revengers/';
-  }else{
+  } else {
     endpoint = slug;
   }
   try {
